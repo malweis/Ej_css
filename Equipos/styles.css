@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   width: 90vh;
+   flex-direction: column;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+    align-items: center;
+    
+}
+.datos > ul, .equipos > ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+.nombre{
+    flex-grow: 2;
+}
+.ultimos{
+    margin-left: 43px;
+    margin-right: 20px;
+}
+.equipos{
+    display: flex;
+}
+.imagenes{
+    width: 20px;
+    height: 20px;
+}
+.checker{
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+.dash{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.cross{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.equipos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+    align-items: center;
+    
+}
+.puntos{
+    margin-left: 15px;
+}
+.equipo{
+    
+        flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  
+}
+.content > div:nth-child(even) {
+    background-color: silver;
+  }
+  
