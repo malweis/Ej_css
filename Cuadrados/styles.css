@@ -1,0 +1,130 @@
+
+/* Add these styles */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    width: 470px; /* Set your desired width */
+    height: 590px;    position: relative;
+    border: 4px solid pink;
+  }
+  
+  /* Other CSS styles */
+  
+
+.demo > * {
+    width: 200px;
+    height: 200px;
+    padding: 1em;
+    transition: opacity 0.3s; /* Add this line */
+  }
+  
+  
+  
+  .demo > [data-state='relative'] {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .demo > * + * {
+    margin-top: -150px;
+    opacity: 0.75;
+    box-shadow: 0 -1px 10px rgba(0 0 0 / 60%);
+  }
+  
+  .demo > :first-child {
+    background: aliceblue;
+    border: 2px solid lightblue;
+    z-index: 5 ;
+    position: relative;
+  }
+  
+  .demo > :nth-child(2) {
+    background: pink;
+    border: 2px solid hotpink;
+    z-index: 4;
+    margin-left: 4rem;
+    position: relative;
+  }
+  
+  .demo > :nth-child(3) {
+    background: pink;
+    border: 2px solid hotpink;
+    z-index: 3;
+    margin-left: 8rem;
+    position: relative;
+  }
+  
+  .demo > :nth-child(4) {
+    background: pink;
+    border: 2px solid hotpink;
+    z-index: 2;
+    margin-left: 10rem;
+    position: relative;
+  }
+  
+  .demo > :last-child {
+    background: wheat;
+    border: 2px solid gold;
+    z-index: 1;
+    margin-left: 14rem;
+    position: relative;
+  }
+  .demo > :first-child:hover {
+    background: red;
+    z-index: 555555 !important;
+    opacity: 1;
+  }
+  
+  .demo > :first-child:hover ~ * {
+    opacity: 0;
+  }
+  
+  .demo > :nth-child(2):hover {
+    background: red;
+    z-index: 555555 !important;
+    opacity: 1;
+  }
+  
+  .demo > :nth-child(2):hover ~ * {
+    opacity: 0;
+  }
+  .demo > :nth-child(3):hover {
+    background: red;
+    z-index: 555555 !important;
+    opacity: 1;
+  }
+  
+  .demo > :nth-child(3):hover ~ * {
+    opacity: 0;
+  }
+
+  .demo > :nth-child(4):hover {
+    background: red;
+    z-index: 555555 !important;
+    opacity: 1;
+  }
+  
+  .demo > :nth-child(4):hover ~ * {
+    opacity: 0;
+  }
+
+  .demo > :last-child:hover {
+    background: red;
+    z-index: 555555 !important;
+    opacity: 1;
+  }
+  
+  .demo > :last-child:hover ~ * {
+    opacity: 0;
+  }
+  
+  
