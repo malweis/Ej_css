@@ -43,14 +43,14 @@
   .demo > :first-child {
     background: aliceblue;
     border: 2px solid lightblue;
-    z-index: 5 ;
+    z-index: 1 ;
     position: relative;
   }
   
   .demo > :nth-child(2) {
     background: pink;
     border: 2px solid hotpink;
-    z-index: 4;
+    z-index: 2;
     margin-left: 4rem;
     position: relative;
   }
@@ -66,7 +66,7 @@
   .demo > :nth-child(4) {
     background: pink;
     border: 2px solid hotpink;
-    z-index: 2;
+    z-index: 4;
     margin-left: 10rem;
     position: relative;
   }
@@ -74,12 +74,12 @@
   .demo > :last-child {
     background: wheat;
     border: 2px solid gold;
-    z-index: 1;
+    z-index: 5;
     margin-left: 14rem;
     position: relative;
   }
   .demo > :first-child:hover {
-    background: red;
+    border: 3px solid red;
     z-index: 555555 !important;
     opacity: 1;
   }
@@ -89,8 +89,7 @@
   }
   
   .demo > :nth-child(2):hover {
-    background: red;
-    z-index: 555555 !important;
+    border: 3px solid red;    z-index: 555555 !important;
     opacity: 1;
   }
   
@@ -98,8 +97,7 @@
     opacity: 0;
   }
   .demo > :nth-child(3):hover {
-    background: red;
-    z-index: 555555 !important;
+    border: 3px solid red;    z-index: 555555 !important;
     opacity: 1;
   }
   
@@ -108,8 +106,7 @@
   }
 
   .demo > :nth-child(4):hover {
-    background: red;
-    z-index: 555555 !important;
+    border: 3px solid red;    z-index: 555555 !important;
     opacity: 1;
   }
   
@@ -118,8 +115,7 @@
   }
 
   .demo > :last-child:hover {
-    background: red;
-    z-index: 555555 !important;
+    border: 3px solid red;    z-index: 555555 !important;
     opacity: 1;
   }
   
